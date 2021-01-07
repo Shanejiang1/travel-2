@@ -7,7 +7,7 @@
              :key="item.id"
         >
           <div class="icon-img">
-            <img class="icon-img-content" :src="item.imgUrl">
+            <img class="icon-img-content" :src="item.imgUrl" />
           </div>
           <p class="icon-desc">{{ item.desc }}</p>
         </div>
@@ -52,8 +52,8 @@ export default {
         desc: '全家出游'
       }, {
         id: '0008',
-        imgUrl: 'https://imgs.qunarzz.com/vc/ea/a3/be/56cdbe6026e59f876283b4414a.png_92.png',
-        desc: '滑雪'
+        imgUrl: 'https://imgs.qunarzz.com/vc/68/4a/91/b7f09964d1e7a6280cca361c46.png_92.png',
+        desc: '休闲潜水'
       }]
     }
   },
