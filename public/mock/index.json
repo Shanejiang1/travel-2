@@ -1,0 +1,103 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+      "id": "0001",
+      "imgUrl": "//imgs.qunarzz.com/vs_ceph_vcimg/b8c4527c41649814cc4cf86880abba54.jpeg"
+    },{
+      "id": "0002",
+      "imgUrl": "//imgs.qunarzz.com/vs_ceph_vcimg/f7813c9431796cc32ae7b7a78447342e.jpeg"
+    },{
+      "id": "0003",
+      "imgUrl": "//imgs.qunarzz.com/vs_ceph_vcimg/569cae4ae98e9793f7341e85eed73c54.jpeg"
+    },{
+      "id": "0004",
+      "imgUrl": "//imgs.qunarzz.com/vs_ceph_vcimg/f03f5ac90ae59d0d9c6332a2bfd9782e.jpeg"
+    }],
+    "iconList": [{
+      "id": "0001",
+      "imgUrl": "https://gw.alicdn.com/tfs/TB1MW5KdQ9l0K4jSZFKXXXFjpXa-180-180.png_.webp",
+      "desc": "景点门票"
+    }, {
+      "id": "0002",
+      "imgUrl": "https://gw.alicdn.com/tfs/TB1CeUmM.Y1gK0jSZFCXXcwqXXa-180-180.png_.webp",
+      "desc": "一日游"
+    }, {
+      "id": "0003",
+      "imgUrl": "https://gw.alicdn.com/tfs/TB1hMsPdGNj0u4jSZFyXXXgMVXa-180-180.png_.webp",
+      "desc": "跟团游"
+    }, {
+      "id": "0004",
+      "imgUrl": "https://gw.alicdn.com/tfs/TB12H3hM2b2gK0jSZK9XXaEgFXa-180-180.png_.webp",
+      "desc": "定制游"
+    }, {
+      "id": "0005",
+      "imgUrl": "https://imgs.qunarzz.com/vc/fd/55/94/6c7152c2a8b35a9c49bb26ea25.png_92.png",
+      "desc": "主题游"
+    }, {
+      "id": "0006",
+      "imgUrl": "https://imgs.qunarzz.com/vc/eb/d9/1b/e24bca3f1ef6ae6ebdee15e4ca.png_92.png",
+      "desc": "徒步登山"
+    }, {
+      "id": "0007",
+      "imgUrl": "https://imgs.qunarzz.com/vc/c3/f2/54/2e1c8f9403de1ed28895c9ffa4.png_92.png",
+      "desc": "全家出游"
+    }, {
+      "id": "0008",
+      "imgUrl": "https://imgs.qunarzz.com/vc/68/4a/91/b7f09964d1e7a6280cca361c46.png_92.png",
+      "desc": "休闲潜水"
+    }],
+    "recommendList": [{
+      "id": "0001",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p75/201211/03/c5e69645fb3de0e193835fbb.jpg_200x200_bd69dc35.jpg",
+      "title": "西岭雪山(4A)",
+      "desc": "终年积雪不化 冬季景色梦幻"
+    }, {
+      "id": "0002",
+      "imgUrl": "https://imgs.qunarzz.com/wugc/p224/201207/13/f40f8a9e4327658c93835fbb.jpg_200x200_484bc04f.jpg",
+      "title": "成都大熊猫繁育研究基地(4A)",
+      "desc": "围观熊猫幼儿园 寄熊猫明信片"
+    }, {
+      "id": "0003",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p0/1505/b0/b0132e78efa00572.water.jpg_200x200_3f499a59.jpg",
+      "title": "青城山(5A)",
+      "desc": "前山问道后山观景 住森系民宿"
+    }, {
+      "id": "0004",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p0/201407/03/a584374ee80b738e2600d6bcaf1299e3.jpg_200x200_c26fb243.jpg",
+      "title": "都江堰景区(5A)",
+      "desc": "世界水利文化鼻祖 二千年历史魅力"
+    }, {
+      "id": "0005",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p0/1509/b6/c07f03a93858de47ebe10d916b4afb4b.water.jpg_110x110_bb99a908.jpg",
+      "title": "成都欢乐谷(4A)",
+      "desc": "西部地区最好的主题公园 儿童的娱乐天堂"
+    }],
+    "weekendList": [{
+      "id": "0001",
+      "imgUrl": "https://imgs.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg",
+      "title": "成都必打卡",
+      "desc": "成都的标志，也是现代人对老成都的记忆"
+    }, {
+      "id": "0002",
+      "imgUrl": "https://imgs.qunarzz.com/sight/source/1811/65/7322301be0a92c.jpg_r_640x214_a3485c55.jpg",
+      "title": "乐山大佛",
+      "desc": "摩崖石刻造像，诸事不顺，来抱佛脚"
+    }, {
+      "id": "0003",
+      "imgUrl": "https://imgs.qunarzz.com/sight/source/1601/ee/87a4630fdc1485.jpg_r_640x214_99dc3e82.jpg",
+      "title": "冰瀑节，相约美丽中国",
+      "desc": "康巴大地上的连绵雪山和不羁的江河"
+    }, {
+      "id": "0004",
+      "imgUrl": "https://imgs.qunarzz.com/sight/source/1505/98/47e8d7bdbed162.jpg_r_640x214_f6059302.jpg",
+      "title": "有温泉就是任性",
+      "desc": "繁忙的一周结束，拖着疲惫的身体赶紧来泡个养生温泉吧"
+    }, {
+      "id": "0005",
+      "imgUrl": "https://imgs.qunarzz.com/sight/source/1505/63/0ffcb5c329a19c.jpg_r_640x214_93fd1e5a.jpg",
+      "title": "成都文艺范儿",
+      "desc": "《成都》唱火了这里，其实这儿不只有酒馆"
+    }]
+  }
+}

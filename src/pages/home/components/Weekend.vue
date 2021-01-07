@@ -4,7 +4,7 @@
     <ul>
       <li
           class="item border-bottom"
-          v-for="item of recommendList"
+          v-for="item of list"
           :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -22,32 +22,14 @@
 <script>
 export default {
   name: "HomeWeekend",
-  data() {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/98/47e8d7bdbed162.jpg_r_640x214_f6059302.jpg',
-        title: '西岭雪山(4A)',
-        desc: '终年积雪不化 冬季景色梦幻'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/98/47e8d7bdbed162.jpg_r_640x214_f6059302.jpg',
-        title: '西岭雪山(4A)',
-        desc: '终年积雪不化 冬季景色梦幻'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/source/1505/98/47e8d7bdbed162.jpg_r_640x214_f6059302.jpg',
-        title: '西岭雪山(4A)',
-        desc: '终年积雪不化 冬季景色梦幻'
-      }]
-    }
+  props:{
+    list: Array
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .title {
-  margin-top: .2rem;
   line-height: .8rem;
   background: #f5f5f5;
   text-indent: .2rem;
@@ -55,7 +37,7 @@ export default {
 .item-img-wrapper {
   overflow: hidden;
   height: 0;
-  padding-bottom: 33.9%;
+  padding-bottom: 39%;
 }
 .item-img {
   width: 100%

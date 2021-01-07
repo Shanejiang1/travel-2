@@ -1,13 +1,13 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOptions">
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div class="icon"
              v-for="item of page"
              :key="item.id"
         >
           <div class="icon-img">
-            <img class="icon-img-content" :src="item.imgUrl" />
+            <img class="icon-img-content" :src="item.imgUrl"/>
           </div>
           <p class="icon-desc">{{ item.desc }}</p>
         </div>
@@ -20,47 +20,20 @@
 <script>
 export default {
   name: "HomeIcons",
+  props: {
+    list: Array
+  },
   data() {
     return {
-      iconList: [{
-        id: '0001',
-        imgUrl: 'https://gw.alicdn.com/tfs/TB1MW5KdQ9l0K4jSZFKXXXFjpXa-180-180.png_.webp',
-        desc: '景点门票'
-      }, {
-        id: '0002',
-        imgUrl: 'https://gw.alicdn.com/tfs/TB1CeUmM.Y1gK0jSZFCXXcwqXXa-180-180.png_.webp',
-        desc: '一日游'
-      }, {
-        id: '0003',
-        imgUrl: 'https://gw.alicdn.com/tfs/TB1hMsPdGNj0u4jSZFyXXXgMVXa-180-180.png_.webp',
-        desc: '跟团游'
-      }, {
-        id: '0004',
-        imgUrl: 'https://gw.alicdn.com/tfs/TB12H3hM2b2gK0jSZK9XXaEgFXa-180-180.png_.webp',
-        desc: '定制游'
-      }, {
-        id: '0005',
-        imgUrl: 'https://imgs.qunarzz.com/vc/fd/55/94/6c7152c2a8b35a9c49bb26ea25.png_92.png',
-        desc: '主题游'
-      }, {
-        id: '0006',
-        imgUrl: 'https://imgs.qunarzz.com/vc/eb/d9/1b/e24bca3f1ef6ae6ebdee15e4ca.png_92.png',
-        desc: '徒步登山'
-      }, {
-        id: '0007',
-        imgUrl: 'https://imgs.qunarzz.com/vc/c3/f2/54/2e1c8f9403de1ed28895c9ffa4.png_92.png',
-        desc: '全家出游'
-      }, {
-        id: '0008',
-        imgUrl: 'https://imgs.qunarzz.com/vc/68/4a/91/b7f09964d1e7a6280cca361c46.png_92.png',
-        desc: '休闲潜水'
-      }]
+      swiperOptions: {
+        autoplay: false
+      }
     }
   },
   computed: {
     pages() {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

@@ -4,7 +4,7 @@
     <ul>
       <li
           class="item border-bottom"
-          v-for="item of recommendList"
+          v-for="item of list"
           :key="item.id"
       >
         <img class="item-img" :src="item.imgUrl"/>
@@ -21,25 +21,8 @@
 <script>
 export default {
   name: "HomeRecommend",
-  data() {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p75/201211/03/c5e69645fb3de0e193835fbb.jpg_200x200_bd69dc35.jpg',
-        title: '西岭雪山(4A)',
-        desc: '终年积雪不化 冬季景色梦幻'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p75/201211/03/c5e69645fb3de0e193835fbb.jpg_200x200_bd69dc35.jpg',
-        title: '西岭雪山(4A)',
-        desc: '终年积雪不化 冬季景色梦幻'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p75/201211/03/c5e69645fb3de0e193835fbb.jpg_200x200_bd69dc35.jpg',
-        title: '西岭雪山(4A)',
-        desc: '终年积雪不化 冬季景色梦幻'
-      }]
-    }
+  props:{
+    list: Array
   }
 }
 </script>
