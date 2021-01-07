@@ -16,15 +16,18 @@ export default {
   data() {
     return {
       swiperOptions: {
-        pagination:'.swiper-pagination',
-        loop:true
+        pagination: '.swiper-pagination',
+        loop: true
       },
-      swiperList:[{
-        id:'0001',
-        imgUrl:'//imgs.qunarzz.com/vs_ceph_vcimg/b8c4527c41649814cc4cf86880abba54.jpeg'
-      },{
-        id:'0002',
-        imgUrl:'//imgs.qunarzz.com/vs_ceph_vcimg/f7813c9431796cc32ae7b7a78447342e.jpeg'
+      swiperList: [{
+        id: '0001',
+        imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/b8c4527c41649814cc4cf86880abba54.jpeg'
+      }, {
+        id: '0002',
+        imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/f7813c9431796cc32ae7b7a78447342e.jpeg'
+      }, {
+        id: '0003',
+        imgUrl: '//imgs.qunarzz.com/vs_ceph_vcimg/569cae4ae98e9793f7341e85eed73c54.jpeg'
       }]
     }
   }
@@ -32,14 +35,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrapper{
+.wrapper {
   overflow: hidden;
   width: 100%;
   height: 0;
-  padding-bottom: 31.25%;
+  padding-bottom: 30.5%;
   background: #eeeeee;
+  .swiper-img {
+    width: 100%;
+  }
 }
-.swiper-img {
-  width: 100%;
-}
+
+
 </style>
