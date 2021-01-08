@@ -1,23 +1,26 @@
 <template>
   <ul class="list">
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
+    <li
+        class="item"
+        v-for="(item, key) of cities"
+        :key="key"
+    >
+      {{key}}
+    </li>
   </ul>
 </template>
 
 <script>
 export default {
-name:"CityAlphabet"
+  name: "CityAlphabet",
+  props: {
+    cities: Object
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-.list{
+.list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +29,7 @@ name:"CityAlphabet"
   right: 0;
   bottom: 0;
   width: .4rem;
-  .item{
+  .item {
     line-height: .4rem;
     text-align: center;
     color: #00bcd4;
