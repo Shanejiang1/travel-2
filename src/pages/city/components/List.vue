@@ -1,51 +1,50 @@
 <template>
-  <div class="list">
-    <div class="area">
-      <div class="title border-topbottom">
-        当前城市
-      </div>
-      <div class="button-list">
-        <div class="button-wrapper">
-          <div class="button">成都</div>
+  <div class="list" ref="wrapper">
+    <div>
+      <div class="area">
+        <div class="title border-topbottom">
+          当前城市
+        </div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">成都</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">
-        热门城市
-      </div>
-      <div class="button-list">
-        <div class="button-wrapper">
-          <div class="button">成都</div>
+      <div class="area">
+        <div class="title border-topbottom">
+          热门城市
+        </div>
+        <div class="button-list">
+          <div class="button-wrapper">
+            <div class="button">成都</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="area">
-      <div class="title border-topbottom">
-        A
-      </div>
-      <div class="item-list">
-        <div class="item border-bottom">阿坝藏族羌族自治州</div>
+      <div class="area">
+        <div class="title border-topbottom">
+          A
+        </div>
+        <div class="item-list">
+          <div class="item border-bottom">阿坝藏族羌族自治州</div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Bscroll from 'better-scroll'
+
 export default {
-  name: "CityList"
+  name: "CityList",
+  mounted(){
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-//.border-topbottom{
-//  &:before{
-//    border-color: #ccc;
-//  }
-//  &:after{
-//    border-color: #ccc;
-//  }
-//}
 .border-bottom {
   &:before {
     border-color: #dddddd;
@@ -59,7 +58,7 @@ export default {
   right: 0;
   bottom: 0;
   .title {
-    line-height: .44rem;
+    line-height: .54rem;
     background: #f5f5f5;
     padding-left: .2rem;
     color: #212121;
