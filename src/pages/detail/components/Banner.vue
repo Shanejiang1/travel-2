@@ -1,22 +1,48 @@
 <template>
-  <div class="banner">
-    <img class="banner-img"
-         src="//img1.qunarzz.com/sight/p75/201211/03/c5e69645fb3de0e193835fbb.jpg_600x330_070d35eb.jpg"/>
-    <div class="banner-info">
-      <div class="banner-title">
-        西岭雪山(AAAA景区)
-      </div>
-      <div class="banner-number">
-        <span class="iconfont banner-icon">&#xe64b;</span>
-        14
+  <div>
+    <div class="banner" @click="handleBannerClick">
+      <img class="banner-img"
+           src="//img1.qunarzz.com/sight/p75/201211/03/c5e69645fb3de0e193835fbb.jpg_600x330_070d35eb.jpg"/>
+      <div class="banner-info">
+        <div class="banner-title">
+          西岭雪山(AAAA景区)
+        </div>
+        <div class="banner-number">
+          <span class="iconfont banner-icon">&#xe64b;</span>
+          14
+        </div>
       </div>
     </div>
+    <common-gallary
+        :imgs="imgs"
+        v-show="showGallary"
+        @close="handleGallaryClose"
+    ></common-gallary>
   </div>
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary'
+
 export default {
-  name: "DetailBanner"
+  name: "DetailBanner",
+  data() {
+    return{
+      showGallary: false,
+      imgs:['http://img1.qunarzz.com/sight/p0/2002/9f/9fa5a79fd53d8ddca3.img.jpg_r_800x800_20d93019.jpg', 'http://img1.qunarzz.com/sight/p92/201211/00/d221848112e4d25393835fbb.jpg_r_800x800_fe561c6f.jpg']
+    }
+  },
+  methods:{
+    handleBannerClick(){
+      this.showGallary = true
+    },
+    handleGallaryClose(){
+      this.showGallary = false
+    }
+  },
+  components: {
+    CommonGallary
+  }
 }
 </script>
 
