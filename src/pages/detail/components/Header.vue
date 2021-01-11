@@ -8,17 +8,17 @@
       <div class="iconfont header-abs-back">&#xe624;</div>
     </router-link>
 
-    <router-link
-        tag="div"
-        to="/"
+    <div
         class="header-fixed"
         v-show="!showAbs"
         :style="opacityStyle"
     >
+      <router-link to="/">
         <div class="iconfont header-fixed-back">&#xe624;
         </div>
+      </router-link>
       景点详情
-    </router-link>
+    </div>
   </div>
 </template>
 
@@ -35,23 +35,21 @@ export default {
   },
   methods: {
     handleScroll() {
-      const top = document.documentElement.scrollTop || window.pageYOfset || document.body.scrollTop
+      const top = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset
       if (top > 60) {
         let opacity = top / 140
         opacity = opacity > 1 ? 1 : opacity
-        this.opacityStyle = {
-          opacity: opacity
-        }
+        this.opacityStyle = {opacity}
         this.showAbs = false
       } else {
-        this.show = true
+        this.showAbs = true
       }
     }
   },
-  activated() {
+  mounted() {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated() {
+  destroyed() {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
