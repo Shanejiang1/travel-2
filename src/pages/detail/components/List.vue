@@ -39,7 +39,7 @@ export default {
     width: .36rem;
     height: .36rem;
     background: url(http://s.qunarzz.com/piao/image/touch/sight/detail.png) 0 -.45rem no-repeat;
-    margin-right: 1rem;
+    margin-right: .1rem;
     background-size: .4rem 3rem;
   }
 }
