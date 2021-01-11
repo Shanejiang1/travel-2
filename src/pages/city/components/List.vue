@@ -114,7 +114,6 @@ export default {
       float: left;
       width: 33.33%;
       .button {
-        //color: #333333;
         margin: .1rem;
         padding: .1rem 0;
         text-align: center;
