@@ -90,7 +90,7 @@ export default {
 <style lang="scss" scoped>
 .border-bottom {
   &:before {
-    border-color: #dddddd;
+    border-color: #e0e0e0;
   }
 }
 .list {
@@ -102,9 +102,9 @@ export default {
   bottom: 0;
   .title {
     line-height: .54rem;
-    background: #f5f5f5;
+    background: #edeff2;
     padding-left: .2rem;
-    color: #212121;
+    color: #808080;
     font-size: .26rem;
   }
   .button-list {
@@ -114,10 +114,12 @@ export default {
       float: left;
       width: 33.33%;
       .button {
+        //color: #333333;
         margin: .1rem;
         padding: .1rem 0;
         text-align: center;
-        border: .02rem solid #dddddd;
+        border: .02rem solid #eaeef1;
+        background: #eaeef1;
         border-radius: .06rem;
       }
     }
@@ -125,7 +127,7 @@ export default {
   .item-list {
     .item {
       line-height: .76rem;
-      color: #212121;
+      color: #333333;
       padding-left: .2rem;
     }
   }

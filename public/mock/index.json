@@ -51,27 +51,32 @@
       "id": "0001",
       "imgUrl": "https://imgs.qunarzz.com/sight/p75/201211/03/c5e69645fb3de0e193835fbb.jpg_200x200_bd69dc35.jpg",
       "title": "西岭雪山(4A)",
-      "desc": "终年积雪不化 冬季景色梦幻"
+      "desc": "终年积雪不化 冬季景色梦幻",
+      "price": "门票￥97起"
     }, {
       "id": "0002",
       "imgUrl": "https://imgs.qunarzz.com/wugc/p224/201207/13/f40f8a9e4327658c93835fbb.jpg_200x200_484bc04f.jpg",
       "title": "成都大熊猫繁育研究基地(4A)",
-      "desc": "围观熊猫幼儿园 寄熊猫明信片"
+      "desc": "围观熊猫幼儿园 寄熊猫明信片",
+      "price": "门票￥52起"
     }, {
       "id": "0003",
       "imgUrl": "https://imgs.qunarzz.com/sight/p0/1505/b0/b0132e78efa00572.water.jpg_200x200_3f499a59.jpg",
       "title": "青城山(5A)",
-      "desc": "前山问道后山观景 住森系民宿"
+      "desc": "前山问道后山观景 住森系民宿",
+      "price": "门票￥78起"
     }, {
       "id": "0004",
       "imgUrl": "https://imgs.qunarzz.com/sight/p0/201407/03/a584374ee80b738e2600d6bcaf1299e3.jpg_200x200_c26fb243.jpg",
       "title": "都江堰景区(5A)",
-      "desc": "世界水利文化鼻祖 二千年历史魅力"
+      "desc": "世界水利文化鼻祖 二千年历史魅力",
+      "price": "门票￥78起"
     }, {
       "id": "0005",
       "imgUrl": "https://imgs.qunarzz.com/sight/p0/1509/b6/c07f03a93858de47ebe10d916b4afb4b.water.jpg_110x110_bb99a908.jpg",
       "title": "成都欢乐谷(4A)",
-      "desc": "西部地区最好的主题公园 儿童的娱乐天堂"
+      "desc": "西部地区最好的主题公园 儿童的娱乐天堂",
+      "price": "门票￥97起"
     }],
     "weekendList": [{
       "id": "0001",

@@ -88,7 +88,7 @@ export default {
 .search {
   height: .72rem;
   padding: 0 .1rem;
-  background: #00bcd4;
+  background: #5bc7d5;
   .search-input {
     box-sizing: border-box;
     width: 100%;
@@ -97,7 +97,7 @@ export default {
     line-height: .62rem;
     text-align: center;
     border-radius: .06rem;
-    color: #666666;
+    color: #333333;
   }
 }
 .search-content {
@@ -113,7 +113,7 @@ export default {
     line-height: .62rem;
     padding-left: .2rem;
     background: #ffffff;
-    color: #212121;
+    color: #333333;
   }
 }
 </style>

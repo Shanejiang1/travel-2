@@ -2,19 +2,18 @@
   <div>
     <div class="title">热门榜单</div>
     <ul>
-      <router-link tag="li"
+      <li
                    class="item border-bottom"
                    v-for="item of list"
                    :key="item.id"
-                   :to="'/detail/' + item.id"
       >
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{ item.title }}</p>
           <p class="item-desc">{{ item.desc }}</p>
-          <button class="item-button">查看详情</button>
+          <p class="item-price">{{item.price}}</p>
         </div>
-      </router-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -32,7 +31,7 @@ export default {
 .title {
   margin-top: .2rem;
   line-height: .8rem;
-  background: #f5f5f5;
+  background: #edeff2;
   text-indent: .2rem;
 }
 .item {
@@ -62,14 +61,13 @@ export default {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .item-button {
-    line-height: .44rem;
+  .item-price{
     margin-top: .16rem;
-    background: #ffffff;
-    border: 1px solid #e6e6e6;
-    padding: 0 .2rem;
-    border-radius: .06rem;
-    color: #666666;
+    line-height: .54rem;
+    font-size: .32rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 </style>

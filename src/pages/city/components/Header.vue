@@ -21,7 +21,7 @@ export default {
   line-height: .86rem;
   text-align: center;
   color: #ffffff;
-  background: #00bcd4;
+  background: #5bc7d5;
   font-size: .32rem;
   .header-back {
     position: absolute;

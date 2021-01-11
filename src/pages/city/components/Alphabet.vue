@@ -81,7 +81,7 @@ export default {
   .item {
     line-height: .4rem;
     text-align: center;
-    color: #00bcd4;
+    color: #4eacc4;
   }
 }
 </style>

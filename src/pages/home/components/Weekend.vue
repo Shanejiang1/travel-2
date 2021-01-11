@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .title {
   line-height: .8rem;
-  background: #f5f5f5;
+  background: #edeff2;
   text-indent: .2rem;
 }
 .item-img-wrapper {
